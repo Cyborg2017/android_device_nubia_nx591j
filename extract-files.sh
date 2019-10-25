@@ -19,7 +19,7 @@ set -e
 
 # Required!
 SRC=~/
-export DEVICE=nx589j
+export DEVICE=nx591j
 export DEVICE_COMMON=msm8976-common
 export VENDOR=nubia
 export DEVICE_BRINGUP_YEAR=2019

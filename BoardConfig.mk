@@ -16,24 +16,24 @@
 # inherit from common msm8976-common
 -include device/nubia/msm8976-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/nubia/nx589j
+DEVICE_PATH := device/nubia/nx591j
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := nx589j,NX589J
+TARGET_OTA_ASSERT_DEVICE := nx591j,NX591J
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-TARGET_KERNEL_CONFIG := mokee_nx589j_defconfig
+TARGET_KERNEL_CONFIG := mokee_nx591j_defconfig
 
 # MoKee Hardware
 JAVA_SOURCE_OVERLAYS := org.mokee.hardware|$(DEVICE_PATH)/mkhw|**/*.java
 
 # Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6442450944
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 54817938432 # 54817954816 - 16384
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 56428567552
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/78b8000.i2c/i2c-4/4-0020/wakeup_gesture"
@@ -44,4 +44,4 @@ include $(DEVICE_PATH)/twrp.mk
 endif
 
 # Inherit from the proprietary version
--include vendor/nubia/nx589j/BoardConfigVendor.mk
+-include vendor/nubia/nx591j/BoardConfigVendor.mk

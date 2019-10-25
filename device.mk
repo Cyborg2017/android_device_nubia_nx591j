@@ -18,7 +18,7 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/nubia/nx589j/nx589j-vendor.mk)
+$(call inherit-product-if-exists, vendor/nubia/nx591j/nx591j-vendor.mk)
 
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml \

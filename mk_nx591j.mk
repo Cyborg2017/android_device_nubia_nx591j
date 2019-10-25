@@ -28,13 +28,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/nubia/nx589j/device.mk)
+$(call inherit-product, device/nubia/nx591j/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := mk_nx589j
-PRODUCT_DEVICE := nx589j
+PRODUCT_NAME := mk_nx591j
+PRODUCT_DEVICE := nx591j
 PRODUCT_BRAND := nubia
-PRODUCT_MODEL := Nubia Z17 MiniS
+PRODUCT_MODEL := Nubia Z17 Lite
 PRODUCT_MANUFACTURER := NUBIA
 
 PRODUCT_GMS_CLIENTID_BASE := android-nubia
