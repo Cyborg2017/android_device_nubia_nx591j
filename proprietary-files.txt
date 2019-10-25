@@ -391,20 +391,19 @@ vendor/lib/libchromatix_s5k3p3_zsl_preview_dw9800.so
 vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so
 
 # Fingerprint
-bin/gx_fpd:vendor/bin/gx_fpd
-lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so
-lib64/hw/gxfingerprint.default.so:vendor/lib64/hw/gxfingerprint.default.so
-lib64/libfp_client.so:vendor/lib64/libfp_client.so
-lib64/libfpjni.so:vendor/lib64/libfpjni.so
-lib64/libfpservice.so:vendor/lib64/libfpservice.so
-lib64/lib_fpc_tac_shared.so
-lib64/hw/fingerprint.msm8952.so
+lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so
+lib/hw/fingerprint.msm8952.so:vendor/lib/hw/fingerprint.msm8952.so
+lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
+lib64/hw/fingerprint.msm8952.so:vendor/lib64/hw/fingerprint.msm8952.so
 
 # NFC
 lib64/hw/nfc_nci.bcm2079x.default.so:vendor/lib64/hw/nfc_nci.bcm2079x.default.so|265bfb5be9efa535596999b233b513011c5cb3bd
-lib64/hw/nfc_nci.bcm2079x.default.so
+vendor/firmware/Generic_unsigned_512_3.ncd
+vendor/firmware/Generic_unsigned_706.ncd
+vendor/firmware/Generic_unsigned_725.ncd
+vendor/firmware/Generic_unsigned_1021_1.ncd
+vendor/firmware/Generic_unsigned_fix_p2p_stuck.ncd
 vendor/firmware/Generic_unsigned.ncd
-
 
 # Sensors
 lib64/sensors.oem.so
