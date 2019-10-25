@@ -38,10 +38,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 56428567552
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/78b8000.i2c/i2c-4/4-0020/wakeup_gesture"
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-include $(DEVICE_PATH)/twrp.mk
-endif
-
 # Inherit from the proprietary version
 -include vendor/nubia/nx591j/BoardConfigVendor.mk
