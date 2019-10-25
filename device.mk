@@ -28,9 +28,9 @@ PRODUCT_COPY_FILES +=  \
 # Keylaouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl::$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/gf5216m.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf5216m.kl \
+    $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl \
     $(LOCAL_PATH)/keylayout/nubia_synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/nubia_synaptics_dsx.kl \
-    $(LOCAL_PATH)/keylayout/synaptics_btn.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_btn.kl
+    $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_rmi4_i2c.kl
 
 # Inherit from nubia msm8976-common
 $(call inherit-product, device/nubia/msm8976-common/msm8976.mk)
