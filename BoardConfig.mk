@@ -36,7 +36,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 56428567552
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/78b8000.i2c/i2c-4/4-0020/wakeup_gesture"
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
 
 # Inherit from the proprietary version
 -include vendor/nubia/nx591j/BoardConfigVendor.mk
