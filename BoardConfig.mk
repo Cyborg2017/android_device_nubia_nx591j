@@ -38,5 +38,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 56428567552
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2017-04-01
+
 # Inherit from the proprietary version
 -include vendor/nubia/nx591j/BoardConfigVendor.mk
