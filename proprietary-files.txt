@@ -306,9 +306,9 @@ vendor/lib/libchromatix_s5k3p3_zsl_video_dw9800.so
 
 # Fingerprint - Hex edit from z17 mini lite (nx591j)
 lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|283e48d529bfafd454a87927511e296158e33e0f
-lib/hw/fingerprint.msm8952.so:vendor/lib/hw/fingerprint.vendor.msm8952.so|dd6911eb55d6a1acc7cb3cf20ca383cf704f0be4
+lib/hw/fingerprint.msm8952.so:vendor/lib/hw/fingerprint.msm8952.so|dd6911eb55d6a1acc7cb3cf20ca383cf704f0be4
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|37a9f33aae2284dc00e1f3ed9381b8d5edcdf17c
-lib64/hw/fingerprint.msm8952.so:vendor/lib64/hw/fingerprint.vendor.msm8952.so|43766ea2aff823ee275915af808daf9ec6639dce
+lib64/hw/fingerprint.msm8952.so:vendor/lib64/hw/fingerprint.msm8952.so|43766ea2aff823ee275915af808daf9ec6639dce
 
 # NFC - Hex edit from z17 mini (nx569j)
 lib64/hw/nfc_nci.bcm2079x.default.so:vendor/lib64/hw/nfc_nci.bcm2079x.default.so|265bfb5be9efa535596999b233b513011c5cb3bd

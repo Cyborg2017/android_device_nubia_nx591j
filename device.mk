@@ -28,9 +28,7 @@ PRODUCT_COPY_FILES +=  \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprint.msm8952 \
-    fingerprintd
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # Keylaouts
 PRODUCT_COPY_FILES += \
