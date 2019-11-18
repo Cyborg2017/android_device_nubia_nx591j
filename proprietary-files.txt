@@ -65,8 +65,7 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so|f57509ed9cb2357ddba63b96223b2e402b9685bf
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-
+vendor/lib/libmmcamera2_stats_modules.so|0727ac92326b8e750ef680c70c62158f1458972e
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
