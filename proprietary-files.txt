@@ -160,11 +160,6 @@ vendor/lib/libactuator_bu64297_aux.so
 vendor/lib/libactuator_bu64297_main.so
 
 # Camera chromatix
-#vendor/lib/libchromatix_csidtg_common.so
-#vendor/lib/libchromatix_csidtg_cpp_preview.so
-#vendor/lib/libchromatix_csidtg_postproc.so
-#vendor/lib/libchromatix_csidtg_preview.so
-
 vendor/lib/libchromatix_imx258_aux_a3_4k_preview.so
 vendor/lib/libchromatix_imx258_aux_a3_4k_video.so
 vendor/lib/libchromatix_imx258_aux_a3_default_preview.so
