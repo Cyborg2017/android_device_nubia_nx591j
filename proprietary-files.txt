@@ -31,11 +31,11 @@ etc/firmware/SCTable.asb
 etc/firmware/SCTable_fcamera.asb
 
 # Camera caf hal (can be replaced by oss)
-#lib/hw/camera.msm8952.so
-#lib/libmm-qcamera.so
-#lib/libmmcamera_interface.so
-#lib/libmmjpeg_interface.so
-#lib/libqomx_core.so
+lib/hw/camera.msm8952.so
+lib/libmm-qcamera.so
+lib/libmmcamera_interface.so
+lib/libmmjpeg_interface.so
+lib/libqomx_core.so
 
 # Camera OTP Required (for nx589j only)
 lib/libalParseOTP.so
