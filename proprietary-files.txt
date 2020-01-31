@@ -31,7 +31,7 @@ etc/firmware/SCTable.asb
 etc/firmware/SCTable_fcamera.asb
 
 # Camera caf hal (can be replaced by oss)
-lib/hw/camera.msm8952.so
+lib/hw/camera.msm8952.so:lib/hw/camera.vendor.msm8952.so
 lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
