@@ -35,5 +35,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_rmi4_i2c.kl
 
+# Ramdisk nubia nx591j specific
+PRODUCT_PACKAGES += \
+    init.nb.nx591j.rc
+
 # Inherit from nubia msm8976-common
 $(call inherit-product, device/nubia/msm8976-common/msm8976.mk)

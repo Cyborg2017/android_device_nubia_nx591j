@@ -1,0 +1,66 @@
+# Copyright (c) 2016-2020, nubia. All rights reserved.
+#
+# init.nb.nx591j.rc
+# For all nubia projects defined in device/nubia
+
+#nubia, tp node start
+on post-fs-data
+    mkdir /data/tp 0775 system system
+    symlink /sys/class/input/input2/ic_ver /data/tp/ic_ver
+    symlink /sys/class/input/input2/reset /data/tp/reset
+    symlink /sys/class/input/input2/f54/ic_detect /data/tp/ic_detect
+    symlink /sys/class/input/input2/start_update /data/tp/start_update
+    chown system system /sys/class/input/input2/wake_gesture
+    symlink /sys/class/input/input2/wake_gesture /data/tp/easy_wakeup_gesture
+    chown system system /sys/class/input/input2/palm_sleep
+    symlink /sys/class/input/input2/palm_sleep /data/tp/easy_sleep_palm
+    chown system system /sys/class/input/input2/f54/read_report
+    write /sys/class/input/input2/start_update 1
+    chown system system /sys/class/input/input2/f54/read_rt2
+    chown system system /sys/class/input/input2/f54/read_rt3
+    symlink /sys/class/input/input2/f54/read_rt2 /data/tp/read_rt2
+    symlink /sys/class/input/input2/f54/read_rt3 /data/tp/read_rt3
+    chown system system /sys/class/input/input2/start_user_update
+    symlink /sys/class/input/input2/start_user_update /data/tp/start_user_update
+
+    #symlink /sys/class/input/input2/f54/read_button_capval /data/tp/read_button_capval
+    #chown system system /sys/class/input/input2/f54/read_button_capval
+    symlink /sys/class/input/input2/f54/home_min_cap /data/tp/home_min_cap
+    chown system system /sys/class/input/input2/f54/home_min_cap
+    symlink /sys/class/input/input2/f54/home_max_cap /data/tp/home_max_cap
+    chown system system /sys/class/input/input2/f54/home_max_cap
+    symlink /sys/class/input/input2/f54/back_min_cap /data/tp/back_min_cap
+    chown system system /sys/class/input/input2/f54/back_min_cap
+    symlink /sys/class/input/input2/f54/back_max_cap /data/tp/back_max_cap
+    chown system system /sys/class/input/input2/f54/back_max_cap
+    symlink /sys/class/input/input2/f54/menu_min_cap /data/tp/menu_min_cap
+    chown system system /sys/class/input/input2/f54/menu_min_cap
+    symlink /sys/class/input/input2/f54/menu_max_cap /data/tp/menu_max_cap
+    chown system system /sys/class/input/input2/f54/menu_max_cap
+    symlink /sys/class/input/input2/f54/base_range_cap /data/tp/base_range_cap
+    chown system system /sys/class/input/input2/f54/base_range_cap
+    symlink /sys/class/input/input2/f54/base_range_cap /data/tp/base_range_cap
+    chown system system /sys/class/input/input2/key_isfactory
+    symlink /sys/class/input/input2/key_isfactory /data/tp/key_isfactory
+    chown system system /sys/class/input/input2/f54/keylooptime
+    symlink /sys/class/input/input2/f54/keylooptime /data/tp/keylooptime
+
+#nubia, tp&lcd node end
+
+on property:gsm.call.other_to_gsm=1
+    write /sys/class/input/input2/home 194
+    write /sys/class/input/input2/menu 194
+    write /sys/class/input/input2/back 194
+
+on property:gsm.call.other_to_gsm=2
+    write /sys/class/input/input2/home 147
+    write /sys/class/input/input2/menu 147
+    write /sys/class/input/input2/back 166
+
+#nubia for 8064test
+on property:sys.tp.wakeup=*
+    write /sys/class/input/input2/wake_gesture ${sys.tp.wakeup}
+
+on property:sys.tp.palmsleep=*
+    write /sys/class/input/input2/palm_sleep ${sys.tp.palmsleep}
+#nubia end
